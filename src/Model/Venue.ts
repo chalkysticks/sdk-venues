@@ -21,7 +21,7 @@ export default class ModelVenue extends ModelBase {
      *
      * @type string
      */
-    public endpoint: string = 'venue';
+    public endpoint: string = 'venues';
 
     /**
      * List of fields available

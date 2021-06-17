@@ -5,7 +5,7 @@ const Venue_1 = require("../Model/Venue");
 class CollectionVenue extends sdk_core_1.CollectionBase {
     constructor() {
         super(...arguments);
-        this.endpoint = 'venue';
+        this.endpoint = 'venues';
         this.model = Venue_1.default;
     }
 }

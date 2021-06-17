@@ -19,7 +19,7 @@ export default class CollectionVenue extends CollectionBase {
      *
      * @type string
      */
-    public endpoint: string = 'venue';
+    public endpoint: string = 'venues';
 
     /**
      * Model object instantiated by this collection

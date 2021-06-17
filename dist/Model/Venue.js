@@ -7,7 +7,7 @@ const sdk_core_1 = require("@chalkysticks/sdk-core");
 class ModelVenue extends sdk_core_1.ModelBase {
     constructor() {
         super(...arguments);
-        this.endpoint = 'venue';
+        this.endpoint = 'venues';
         this.fields = [
             'id',
             'name',
