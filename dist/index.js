@@ -1,8 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ModelVenue = exports.CollectionVenue = void 0;
+exports.ModelVenueMeta = exports.ModelVenueMedia = exports.ModelVenueDetail = exports.ModelVenue = exports.CollectionVenueMeta = exports.CollectionVenueMedia = exports.CollectionVenueDetail = exports.CollectionVenue = void 0;
 const Venue_1 = require("./Collection/Venue");
 exports.CollectionVenue = Venue_1.default;
+const VenueDetail_1 = require("./Collection/VenueDetail");
+exports.CollectionVenueDetail = VenueDetail_1.default;
+const VenueMedia_1 = require("./Collection/VenueMedia");
+exports.CollectionVenueMedia = VenueMedia_1.default;
+const VenueMeta_1 = require("./Collection/VenueMeta");
+exports.CollectionVenueMeta = VenueMeta_1.default;
 const Venue_2 = require("./Model/Venue");
 exports.ModelVenue = Venue_2.default;
+const VenueDetail_2 = require("./Model/VenueDetail");
+exports.ModelVenueDetail = VenueDetail_2.default;
+const VenueMedia_2 = require("./Model/VenueMedia");
+exports.ModelVenueMedia = VenueMedia_2.default;
+const VenueMeta_2 = require("./Model/VenueMeta");
+exports.ModelVenueMeta = VenueMeta_2.default;
 //# sourceMappingURL=index.js.map
