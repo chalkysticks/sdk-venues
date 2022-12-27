@@ -2,21 +2,15 @@ import { CollectionBase } from '@chalkysticks/sdk-core';
 import ModelVenueMedia from '../Model/VenueMedia';
 
 /**
- * ┌────────────────────────────────────────────────────────────────────────────┐
- * │                                                                            │
- * │ CollectionVenueMedia                                                       │
- * │                                                                            │
- * │ @namespace Collection                                                      │
- * │ @package   SDK-Venues                                                      │
- * │ @project   ChalkySticks                                                    │
- * │                                                                            │
- * └────────────────────────────────────────────────────────────────────────────┘
+ * @class CollectionVenueMedia
+ * @package Collection
+ * @project ChalkySticks SDK Venues
  */
-export default class CollectionVenueMedia extends CollectionBase {
+export default class CollectionVenueMedia extends CollectionBase<ModelVenueMedia> {
     /**
      * Model object instantiated by this collection
      *
      * @type ModelVenueMedia
      */
-    public model: any = ModelVenueMedia;
+    public model: ModelVenueMedia = new ModelVenueMedia();
 }

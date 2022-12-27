@@ -4,15 +4,9 @@ import CollectionVenueMeta from '../Collection/VenueMeta';
 import { ModelBase } from '@chalkysticks/sdk-core';
 
 /**
- * ┌────────────────────────────────────────────────────────────────────────────┐
- * │                                                                            │
- * │ ModelVenue                                                                 │
- * │                                                                            │
- * │ @namespace Model                                                           │
- * │ @package   SDK-Venue                                                       │
- * │ @project   ChalkySticks                                                    │
- * │                                                                            │
- * └────────────────────────────────────────────────────────────────────────────┘
+ * @class ModelVenue
+ * @package Model
+ * @project ChalkySticks SDK Venues
  */
 export default class ModelVenue extends ModelBase {
     /**
@@ -66,7 +60,6 @@ export default class ModelVenue extends ModelBase {
     }
 
     // endregion: Relationships
-
 
 
     // region: Getters
@@ -192,5 +185,4 @@ export default class ModelVenue extends ModelBase {
     }
 
     // endregion: Getters
-
 }

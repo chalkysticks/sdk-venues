@@ -1,15 +1,9 @@
 import { ModelBase } from '@chalkysticks/sdk-core';
 
 /**
- * ┌────────────────────────────────────────────────────────────────────────────┐
- * │                                                                            │
- * │ ModelVenueDetail                                                           │
- * │                                                                            │
- * │ @namespace Model                                                           │
- * │ @package   SDK-Venue                                                       │
- * │ @project   ChalkySticks                                                    │
- * │                                                                            │
- * └────────────────────────────────────────────────────────────────────────────┘
+ * @class ModelVenueDetail
+ * @package Model
+ * @project ChalkySticks SDK Venues
  */
 export default class ModelVenueDetail extends ModelBase {
     /**
@@ -50,5 +44,4 @@ export default class ModelVenueDetail extends ModelBase {
     }
 
     // endregion: Getters
-
 }

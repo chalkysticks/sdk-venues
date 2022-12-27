@@ -2,21 +2,15 @@ import { CollectionBase } from '@chalkysticks/sdk-core';
 import ModelVenueMeta from '../Model/VenueMeta';
 
 /**
- * ┌────────────────────────────────────────────────────────────────────────────┐
- * │                                                                            │
- * │ CollectionVenueMeta                                                        │
- * │                                                                            │
- * │ @namespace Collection                                                      │
- * │ @package   SDK-Venues                                                      │
- * │ @project   ChalkySticks                                                    │
- * │                                                                            │
- * └────────────────────────────────────────────────────────────────────────────┘
+ * @class CollectionVenueMeta
+ * @package Collection
+ * @project ChalkySticks SDK Venues
  */
-export default class CollectionVenueMeta extends CollectionBase {
+export default class CollectionVenueMeta extends CollectionBase<ModelVenueMeta> {
     /**
      * Model object instantiated by this collection
      *
      * @type ModelVenueMeta
      */
-    public model: any = ModelVenueMeta;
+    public model: ModelVenueMeta = new ModelVenueMeta();
 }
