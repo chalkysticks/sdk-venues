@@ -24,6 +24,7 @@ export default class ModelVenueMedia extends ModelBase {
     // ---------------------------------------------------------------------------
 
     /**
+	 * e.g. image, video
      * @return string
      */
     public getType(): string {

@@ -66,6 +66,7 @@ export default class ModelVenue extends ModelBase {
     // ---------------------------------------------------------------------------
 
     /**
+	 * Full address
      * @return string
      */
     public getAddress(): string {
