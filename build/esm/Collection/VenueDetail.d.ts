@@ -1,5 +1,5 @@
-import { CollectionBase } from '@chalkysticks/sdk-core';
-import ModelVenueDetail from '../Model/VenueDetail';
-export default class CollectionVenueDetail extends CollectionBase<ModelVenueDetail> {
-    model: ModelVenueDetail;
+import { Collection } from '@chalkysticks/sdk-core';
+import * as Model from '../Model';
+export declare class VenueDetail extends Collection.Base<Model.VenueDetail> {
+    model: Model.VenueDetail;
 }

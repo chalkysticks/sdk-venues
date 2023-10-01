@@ -1,11 +1,10 @@
 import { expect } from 'chai';
-import CollectionVenue from '../src/Collection/Venue';
-import ModelVenue from '../src/Model/Venue';
+import { Collection, Model } from '../src';
 
 // Setup
 // ----------------------------------------------------------------------------
 
-const collection: CollectionVenue = CollectionVenue.hydrate([
+const collection: Collection.Venue = Collection.Venue.hydrate([
     {
         id: 1,
         created_at: '2016-02-10 17:34:40',
@@ -157,22 +156,10 @@ const collection: CollectionVenue = CollectionVenue.hydrate([
     },
 ]);
 
-
-/**
-  ┌────────────────────────────────────────────────────────────────────────────┐
-  │                                                                            │
-  │ Local tests                                                                │
-  │                                                                            │
-  └────────────────────────────────────────────────────────────────────────────┘
-*/
-
 describe('Venue - Local', () => {
-
     it('should have a name', () => {
-        const model: ModelVenue = collection.at(1) as ModelVenue;
+        const model: Model.Venue = collection.at(1) as Model.Venue;
 
-        expect(model.getName())
-            .to
-            .equal('Superfine');
+        expect(model.getName()).to.equal('Superfine');
     });
 });

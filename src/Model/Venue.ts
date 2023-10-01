@@ -1,14 +1,12 @@
-import CollectionVenueDetail from '../Collection/VenueDetail';
-import CollectionVenueMedia from '../Collection/VenueMedia';
-import CollectionVenueMeta from '../Collection/VenueMeta';
-import { ModelBase } from '@chalkysticks/sdk-core';
+import * as Collection from '../Collection';
+import { Model } from '@chalkysticks/sdk-core';
 
 /**
- * @class ModelVenue
+ * @class Venue
  * @package Model
  * @project ChalkySticks SDK Venues
  */
-export default class ModelVenue extends ModelBase {
+export class Venue extends Model.Base {
     /**
      * Endpoint key
      * e.g. https://api.chalkysticks.com/v3/venue
@@ -43,30 +41,27 @@ export default class ModelVenue extends ModelBase {
         'updated_at',
     ];
 
-
     // region: Relationships
     // ---------------------------------------------------------------------------
 
-    public get detail(): CollectionVenueDetail {
-        return this.hasMany('details', CollectionVenueDetail);
+    public get detail(): Collection.VenueDetail {
+        return this.hasMany('details', Collection.VenueDetail);
     }
 
-    public get media(): CollectionVenueMedia {
-        return this.hasMany('media', CollectionVenueMedia);
+    public get media(): Collection.VenueMedia {
+        return this.hasMany('media', Collection.VenueMedia);
     }
 
-    public get metadata(): CollectionVenueMeta {
-        return this.hasMany('meta', CollectionVenueMeta);
+    public get metadata(): Collection.VenueMeta {
+        return this.hasMany('meta', Collection.VenueMeta);
     }
 
     // endregion: Relationships
-
 
     // region: Getters
     // ---------------------------------------------------------------------------
 
     /**
-	 * Full address
      * @return string
      */
     public getAddress(): string {

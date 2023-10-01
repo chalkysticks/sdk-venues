@@ -1,16 +1,16 @@
-import { CollectionBase } from '@chalkysticks/sdk-core';
-import ModelVenueDetail from '../Model/VenueDetail';
+import { Collection } from '@chalkysticks/sdk-core';
+import * as Model from '../Model';
 
 /**
- * @class CollectionVenueDetail
+ * @class VenueDetail
  * @package Collection
  * @project ChalkySticks SDK Venues
  */
-export default class CollectionVenueDetail extends CollectionBase<ModelVenueDetail> {
+export class VenueDetail extends Collection.Base<Model.VenueDetail> {
     /**
      * Model object instantiated by this collection
      *
-     * @type ModelVenueDetail
+     * @type Model.VenueDetail
      */
-    public model: ModelVenueDetail = new ModelVenueDetail();
+    public model: Model.VenueDetail = new Model.VenueDetail();
 }

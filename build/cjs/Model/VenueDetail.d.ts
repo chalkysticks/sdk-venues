@@ -1,5 +1,5 @@
-import { ModelBase } from '@chalkysticks/sdk-core';
-export default class ModelVenueDetail extends ModelBase {
+import { Model } from '@chalkysticks/sdk-core';
+export declare class VenueDetail extends Model.Base {
     fields: string[];
     getGroup(): string;
     getKey(): string;

@@ -1,11 +1,11 @@
-import { ModelBase } from '@chalkysticks/sdk-core';
+import { Model } from '@chalkysticks/sdk-core';
 
 /**
- * @class ModelVenueMedia
+ * @class VenueMedia
  * @package Model
  * @project ChalkySticks SDK Venues
  */
-export default class ModelVenueMedia extends ModelBase {
+export class VenueMedia extends Model.Base {
     /**
      * List of fields available
      *
@@ -18,7 +18,6 @@ export default class ModelVenueMedia extends ModelBase {
         'created_at',
         'updated_at',
     ];
-
 
     // region: Getters
     // ---------------------------------------------------------------------------

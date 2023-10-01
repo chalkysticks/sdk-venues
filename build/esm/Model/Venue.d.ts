@@ -1,13 +1,11 @@
-import CollectionVenueDetail from '../Collection/VenueDetail';
-import CollectionVenueMedia from '../Collection/VenueMedia';
-import CollectionVenueMeta from '../Collection/VenueMeta';
-import { ModelBase } from '@chalkysticks/sdk-core';
-export default class ModelVenue extends ModelBase {
+import * as Collection from '../Collection';
+import { Model } from '@chalkysticks/sdk-core';
+export declare class Venue extends Model.Base {
     endpoint: string;
     fields: string[];
-    get detail(): CollectionVenueDetail;
-    get media(): CollectionVenueMedia;
-    get metadata(): CollectionVenueMeta;
+    get detail(): Collection.VenueDetail;
+    get media(): Collection.VenueMedia;
+    get metadata(): Collection.VenueMeta;
     getAddress(): string;
     getCity(): string;
     getCountry(): string;

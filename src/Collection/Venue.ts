@@ -1,12 +1,12 @@
-import { CollectionBase } from '@chalkysticks/sdk-core';
-import ModelVenue from '../Model/Venue';
+import { Collection } from '@chalkysticks/sdk-core';
+import * as Model from '../Model';
 
 /**
- * @class CollectionVenue
+ * @class Venue
  * @package Collection
  * @project ChalkySticks SDK Venues
  */
-export default class CollectionVenue extends CollectionBase<ModelVenue> {
+export class Venue extends Collection.Base<Model.Venue> {
     /**
      * Endpoint key
      * e.g. https://api.chalkysticks.com/v1/venue
@@ -18,7 +18,7 @@ export default class CollectionVenue extends CollectionBase<ModelVenue> {
     /**
      * Model object instantiated by this collection
      *
-     * @type ModelVenue
+     * @type Model.Venue
      */
-    public model: ModelVenue = new ModelVenue();
+    public model: Model.Venue = new Model.Venue();
 }

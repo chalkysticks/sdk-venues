@@ -1,5 +1,5 @@
-import { CollectionBase } from '@chalkysticks/sdk-core';
-import ModelVenueMedia from '../Model/VenueMedia';
-export default class CollectionVenueMedia extends CollectionBase<ModelVenueMedia> {
-    model: ModelVenueMedia;
+import { Collection } from '@chalkysticks/sdk-core';
+import * as Model from '../Model';
+export declare class VenueMedia extends Collection.Base<Model.VenueMedia> {
+    model: Model.VenueMedia;
 }

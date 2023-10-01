@@ -1,5 +1,5 @@
-import { ModelBase } from '@chalkysticks/sdk-core';
-export default class ModelVenueMedia extends ModelBase {
+import { Model } from '@chalkysticks/sdk-core';
+export declare class VenueMedia extends Model.Base {
     fields: string[];
     getType(): string;
     getUrl(): string;
